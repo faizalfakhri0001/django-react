@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 50px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.8s;
+}
+
+.openSide {
+    width: 230px;
+}
+
+.sidebar .sidebar__wapperOpen{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Header */
+.sidebar .sidebar__wapperOpen .sidebar__wapperHeader {
+    display: flex;
+    flex: 0.12;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+
+.sidebar .sidebar__wapperOpen .sidebar__wapperHeader .sidebar__Icon {
+    color: white;
+    font-size: 30px;
+    justify-self: center;
+}
+
+.sidebar .sidebar__wapperOpen .sidebar__wapperHeader .sidebar__title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.sidebar .sidebar__wapperOpen .sidebar__wapperHeader .sidebar__Icon:hover,
+.sidebar .sidebar__wapperOpen .sidebar__wapperHeader .sidebar__title:hover {
+    color: violet;
+    cursor: pointer;
+}
+
+/* Content */
+.sidebar .sidebar__wapperOpen .sidebar__wapperContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    border-bottom: 2px solid white;
+    margin-top: 1rem;
+}
+
+.sidebar .sidebar__wapperOpen .sidebar__wapperContent .sidebar__wapperIcon {
+    text-align: center;
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.sidebar .sidebar__wapperOpen .sidebar__wapperContent .sidebar__wapperIcon .sidebar__Icon {
+    margin-left: -1rem;
+    width: 50px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sidebar .sidebar__wapperOpen .sidebar__wapperContent .sidebar__wapperIcon .sidebar__Icontitle {
+    width: 100px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar .sidebar__wapperOpen .sidebar__wapperContent .sidebar__wapperIcon .sidebar__Icon:hover,
+.sidebar .sidebar__wapperOpen .sidebar__wapperContent .sidebar__wapperIcon .sidebar__Icontitle:hover {
+    color: violet;
+    cursor: pointer;
+}
+
+/* Footer */
+.sidebar .sidebar__wapperOpen .sidebar__wapperFooter {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.sidebar .sidebar__wapperOpen .sidebar__wapperFooter .sidebar__wapperIcon {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sidebar .sidebar__wapperOpen .sidebar__wapperFooter .sidebar__wapperIcon .sidebar__footerIcon {
+    width: 50px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sidebar .sidebar__wapperOpen .sidebar__wapperFooter .sidebar__wapperIcon .sidebar__footerTitle {
+    width: 100px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: -10px;
+}
+
+.sidebar .sidebar__wapperOpen .sidebar__wapperFooter .sidebar__wapperIcon .sidebar__footerIcon:hover,
+.sidebar .sidebar__wapperOpen .sidebar__wapperFooter .sidebar__wapperIcon .sidebar__footerTitle:hover {
+    color: violet;
+    cursor: pointer;
+}
+
+
+
+/* Close */
+.sidebar .sidebar__wapperClose {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}   
+
+.sidebar .sidebar__wapperClose .sidebar__wapperHeader {
+    width: 100%;
+    display: flex;
+    flex: 0.12;
+    border-bottom: 2px solid white;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .sidebar__wapperClose .sidebar__wapperHeader .sidebar__Icon {
+    font-size: 30px;
+    color: white;
+}
+
+
+/* Content */
+.sidebar .sidebar__wapperClose .sidebar__wapperContent {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-bottom: 2px solid white;
+}
+
+.sidebar .sidebar__wapperClose .sidebar__wapperContent .sidebar__wapperIcon {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.sidebar .sidebar__wapperClose .sidebar__wapperContent .sidebar__wapperIcon .sidebar__Icon {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+/* Footer */
+.sidebar .sidebar__wapperClose .sidebar__wapperFooter {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.sidebar .sidebar__wapperClose .sidebar__wapperFooter .sidebar__wapperIcon {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sidebar .sidebar__wapperClose .sidebar__wapperFooter .sidebar__wapperIcon .sidebar__footerIcon {
+    margin-top: 10px;
+    width: 50px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.sidebar .sidebar__wapperClose .sidebar__wapperHeader .sidebar__Icon:hover,
+.sidebar .sidebar__wapperClose .sidebar__wapperContent .sidebar__wapperIcon .sidebar__Icon:hover,
+.sidebar .sidebar__wapperClose .sidebar__wapperFooter .sidebar__wapperIcon .sidebar__footerIcon:hover {
+    color: violet;
+    cursor: pointer;
+}

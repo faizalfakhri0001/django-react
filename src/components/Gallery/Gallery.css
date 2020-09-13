@@ -1,0 +1,71 @@
+.Portofolio {
+    display: flex;
+    justify-content: center;
+}
+
+.Portofolio .header {
+    display: flex;
+    border-bottom: 2px solid #000;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.MenuWrapper {
+    margin: auto 10px;
+}
+
+.ContentWrapper {
+    padding: 0px 2px 0px 2px !important;
+    height: 120px;
+    margin-bottom: 5px;
+}
+
+.Content {
+    overflow: hidden;
+    margin-top: 3px;
+    width: 100%;
+    height: 100%;
+}
+
+.Content > img {
+    width: 100%;
+}
+
+.Content > img:hover {
+    filter: grayscale(80%);
+}
+
+.Content .MuiSvgIcon-root {
+    left: 0;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.Content .MuiSvgIcon-root:hover {
+    cursor: pointer;
+}
+
+.Content__add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    margin-top: 3px;
+    width: 100%;
+    height: 100%;
+}
+
+.Content__add .MuiSvgIcon-root {
+    font-size: 40px;
+    color: black;
+}
+
+.Content__add:hover {
+    background-color: darkgray;
+}
+
+.Content__add .MuiSvgIcon-root:hover {
+    color: whitesmoke;
+}

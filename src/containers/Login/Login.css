@@ -1,0 +1,74 @@
+.Login {
+    display: flex;
+    height: 100vh;
+    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login__Wrapper {
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login__title {
+    /* margin-top: 1rem; */
+    display: flex;
+    justify-content: center;
+}
+
+.Login__form{
+    /* margin-top: 2rem; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.Login__input {
+    display: flex;
+    height: 30px;
+    padding: 10px 20px;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.Login__input .Icon {
+    color: lightgray;
+}
+
+.Login__input > input {
+    border: none;
+}
+
+.Login__input > input:focus{
+    outline-width: 0;
+}
+
+.Login__input > input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.btn__rounded {
+    border-radius: 999px !important;
+    margin-top: 1rem;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 400px) {
+    .Login__Wrapper {
+        min-height: 200px;
+        height: 30%;
+        width: 90%;
+    }
+}

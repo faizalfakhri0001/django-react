@@ -1,0 +1,165 @@
+.Chat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    width: 50px;
+    top: 35%;
+}
+
+.Chat .Chat__icon1 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px 0 0 99px;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.Chat .Chat__icon2 {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 99px 0 0 99px;
+    height: 50px;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    transition: width 1s;
+}
+
+.Chat .Chat__icon2 .Wrapper {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Chat .Chat__icon2 .Wrapper > input {
+    width: 400px;
+    height: 30px;
+    border: 0;
+    font-size: 16px;
+}
+
+.Chat .Chat__icon2 .Wrapper > input:focus {
+    outline-width: 0;
+}
+
+.closeSearch {
+    justify-content: flex-start;
+    width: 50px;
+}
+
+.openSearch {
+    justify-content: space-between;
+    width: 250px;
+}
+
+.Chat .Chat__icon1 .MuiSvgIcon-root {
+    font-size: 40px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.Chat .Chat__icon2 .MuiSvgIcon-root {
+    font-size: 40px;
+    padding: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.Chat__Wrapper {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    flex-flow: column;
+    transition: width 0.5s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    overflow: hidden;
+}
+
+.open {
+    width: 300px;
+}
+
+.close {
+    width: 0;
+}
+
+.openWrapper {
+    display: flex;
+}
+
+.closeWrapper {
+    display: none;
+}
+
+.Chat__Wrapper .header {
+    padding: 10px;
+    width: 100%;
+    flex: 1;
+    justify-content: flex-end;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.Chat__Wrapper .header .MuiSvgIcon-root {
+    font-size: 40px;
+    padding: 5px;
+}
+
+.Chat__Wrapper .header .MuiSvgIcon-root:hover {
+    cursor: pointer;
+    color: lightgray;
+}
+
+.Chat__Wrapper .content {
+    overflow: hidden;
+    padding: 10px;
+    flex: 8;
+    width: 100%;
+}
+
+.Chat__Wrapper .footer {
+    width: 100%;
+    padding: 10px;
+    flex: 2;
+    box-shadow: 1px -1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.Chat__Wrapper .footer .input__1 {
+    border: 1px solid lightgray;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 999px;
+}
+.Chat__Wrapper .footer .input__1 .MuiSvgIcon-root {
+    color: black;
+}
+
+.Chat__Wrapper .footer .input__1 .MuiSvgIcon-root:hover {
+    cursor: pointer;
+    color: lightgray;
+}
+
+.Chat__Wrapper .footer .input__1 > input {
+    border: 0;
+    background-color: transparent;
+}
+
+.Chat__Wrapper .footer .input__1 > input:focus {
+    outline-width: 0;
+}

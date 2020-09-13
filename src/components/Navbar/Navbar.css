@@ -1,0 +1,22 @@
+.navbar .itemWrapper {
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+}
+
+.navbar .itemWrapper .IconWapper {
+    display: flex;
+    flex: 0.3;
+    justify-content: flex-end;
+}
+ 
+.navbar .itemWrapper .IconWapper .Icon {
+    font-size: 20px;
+    color: white;
+    margin-right: 1rem;
+}
+
+.navbar .itemWrapper .IconWapper .Icon:hover {
+    color: violet;
+    cursor: pointer;
+}
